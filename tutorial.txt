@@ -36,7 +36,9 @@ git config --global user.email "seuemail@email.com"
 git clone url_do_repositório
 git add . (adiciona ao repositório local)
 git commit -m "Tutorial" (docuentar as as alterações)
-git push (envia ao repositório)
+git push (envia ao repositório no github)
+git pull ()
+
 
 
 Gerar token GitHub

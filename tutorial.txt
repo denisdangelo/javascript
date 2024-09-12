@@ -37,7 +37,7 @@ git clone url_do_repositório
 git add . (adiciona ao repositório local)
 git commit -m "Tutorial" (docuentar as as alterações)
 git push (envia ao repositório no github)
-git pull ()
+git pull (sincronizar as nformações do repositório no pc)
 
 
 

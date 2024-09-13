@@ -46,3 +46,41 @@ Gerar token GitHub
 2) Developer Settings
 3) Token classic
 4) Gerar o token selecionando tudo, guardar o token
+
+--------------------------------------------------------------------------
+Boas praticas
+1) cabeçalho de documentação - no arduino
+#antes do Setup
+/**
+    Nome do projeto
+    Descrição da classe ou da função
+    @author 
+    @version
+*/
+
+#Comando para ativar a comunicação do arduino
+#OBS: 9600 é a velocidade de comunicação padrão em bits
+Serial.begin(9600);
+
+#comando para escrever no console
+Serial.print("Hello World");
+
+#Comando para escrever no console e pular uma linha 
+Serial.println("Hello World");
+
+Java Classe sempre começa com letra maiuscula
+
+Codigo hello world no Java
+package hello;
+
+public class Hello {
+	public static void main (String[] args) {
+		System.out.println("Hello World");
+	}
+}
+
+
+------------------------------------------------------------------
+
+JavaScript
+node + nome do arquivo com a estenção (por exemplo hello.js)

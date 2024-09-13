@@ -84,3 +84,25 @@ public class Hello {
 
 JavaScript
 node + nome do arquivo com a estenção (por exemplo hello.js)
+
+
+------------------------------------------------------------------
+Node - Plataforma que permite a execução do JavaScript fora do navegador (browser)
+https://nodejs.org/pt (baixar sempre a versão lts)
+
+
+comandos basicos
+node -v - versão do node.js
+
+gerenciador de pacotes para o node (bibliotecas/extenções)
+o npm está relacionado à pasta, dessa forma para utilizar um pacote você deve baixar para o repositório
+Os pacotes são instalados na raiz do projeto e não no sistema operacional
+
+npm -v - versão do npm
+npm ls - listar pacotes instalados
+npm init - inicia um novo projeto JavaScrip
+        cria um arquivo de nome package.json
+        (json (JavaScript Object Notation)javascript orientado a objetos)
+
+
+repositório de pacotes para node https://www.npmjs.com/

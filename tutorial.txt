@@ -70,12 +70,6 @@ Regras (clean code)
 #OBS: 9600 é a velocidade de comunicação padrão em bits
 Serial.begin(9600);
 
-#comando para escrever no console
-Serial.print("Hello World");
-
-#Comando para escrever no console e pular uma linha 
-Serial.println("Hello World");
-
 Java Classe sempre começa com letra maiuscula
 
 Codigo hello world no Java
@@ -87,11 +81,28 @@ public class Hello {
 	}
 }
 
+__________________________________________________________________
+Arduino
 
-------------------------------------------------------------------
+#comando para escrever no console
+Serial.print("Hello World");
+
+#Comando para escrever no console e pular uma linha 
+Serial.println("Hello World");
+
+//variavel que vai armazenar o valor do sensor
+int sensor;
+
+//Leitura do sensor
+ sensor = analogRead(A0);
+ Serial.println(sensor);
+
+________________________________________________________________
 
 JavaScript
-node + nome do arquivo com a estenção (por exemplo hello.js)
+
+execução do programa
+node + nome do arquivo com a estenção (por exemplo node hello.js)
 
 
 ------------------------------------------------------------------
@@ -122,10 +133,14 @@ Uma constante é como uma variável, mas com uma diferença importante: uma vez 
 
 Por que usar constantes?
 Segurança: Se você sabe que um valor não deve ser alterado em seu programa, usar uma constante evita erros.
-Legibilidade: Quando você usa uma constante, deixa claro para quem está lendo o código que aquele valor é fixo e importante.
-Boas práticas: Em muitos casos, é recomendado usar constantes sempre que possível para valores que não precisam mudar, facilitando a manutenção do código.
+Legibilidade: Quando você usa uma constante, deixa claro para quem está lendo o código que aquele valor é fixo e
+importante.
+Boas práticas: Em muitos casos, é recomendado usar constantes sempre que possível para valores que não precisam mudar,
+facilitando a manutenção do código.
 
-Uma variável é um espaço na memória do computador onde armazenamos dados que podem ser utilizados e modificados durante a execução de um programa. O nome "variável" vem do fato de que o valor armazenado pode variar ao longo do tempo, conforme o programa roda.
+Uma variável é um espaço na memória do computador onde armazenamos dados que podem ser utilizados e modificados 
+durante a execução de um programa. 
+O nome "variável" vem do fato de que o valor armazenado pode variar ao longo do tempo, conforme o programa roda.
 
 Por que usar variáveis?
 Para guardar informações que você vai precisar mais tarde.
@@ -139,7 +154,12 @@ String - Armazena caracteres e numeros
 number - armazena números inteiros e não inteiros
 boolean - true | false
 
+constante tem um valor imutável.
+
 (obs outras linguagens tem subtipos dessas variaveis)
+
+OBS area do circulo é pi x raio do circulo
+
 __________________________________________________________________
 comandos JavaScript (sintaxe)
 
@@ -149,6 +169,10 @@ const - criar (declarar) uma constante
 let - criar (declarar) uma variavel
 typeof() - verificar o tipo de variavel
 
+Sintese está em "variaveis.js"
+
+ATENÇÃO. No JavaScript, uma variavel pode ser criada usando "let" ou "var", porem "var" é obsoleto e inseguro.
+Usar sempre "let"
 
 ___________________________________________________________________
 Comandos basicos do ms_dos

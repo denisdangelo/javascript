@@ -1,0 +1,3 @@
+Para abrir uma imagem que não está permitida clicar no Cadeado.
+
+Para mudar os tipos de cores permitidar clicar em Imagem>Modo>cores RGB

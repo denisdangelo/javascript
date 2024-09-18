@@ -11,6 +11,9 @@ let nome
 let idade
 let vip
 
+//constante
+const pi = 3.14
+
 nome= "Denis D'Angelo"
 console.log(typeof(nome))
 console.log(nome)
@@ -22,3 +25,7 @@ console.log(idade)
 vip = true
 console.log(typeof(vip))
 console.log(vip)
+
+console.log(pi)
+nome = "Denis D'Angelo da Silveira"
+console.log(nome)

@@ -21,6 +21,7 @@ vip = true
 
 // saida
 //o simbolo "``" serve para concatenar, juntar. Igual ao Join no scratch
+//A sintase é (`nome do que você quer juntar ${variavel que você quer usar}
 console.log("Ficha do Aluno")
 console.log("_____________________________")
 console.log(`Nome: ${nome}`)

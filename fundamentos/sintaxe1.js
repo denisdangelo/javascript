@@ -18,3 +18,4 @@ console.log("Nome: " ) //não recomendado
 let media = 5.789
 console.log(`Media: ${media.toFixed(1)}`) // toFixed(2) fixa o valor após a cada decimal em 2 O valor dentro de parenteses determina quantas linhas 
                                           //após a casa decimal serão exibidas
+

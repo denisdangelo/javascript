@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/denisdangelo/javascript/issues"
   },
-  "homepage": "https://github.com/denisdangelo/javascript#readme"
+  "homepage": "https://github.com/denisdangelo/javascript#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }

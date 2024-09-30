@@ -3,4 +3,5 @@
  * @author Denis D'Angelo
  */
 
-console.log("Hello World");
+const colors = require('colors')
+console.log("Hello World".blue);

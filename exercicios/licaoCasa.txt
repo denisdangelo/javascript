@@ -19,7 +19,7 @@ media = (num1 + num2 + num3) / 3
 // saída
 media
 
-1) Cálculo do volume de um aquário:
+1) Cálculo do volume de um aquário: ok
 Crie um programa que calcule o volume de um aquário. O usuário deve inserir o comprimento, a largura e a altura do aquário. O programa deve calcular o volume e exibir o resultado em litros.
 
 2) Cálculo do consumo de combustível:

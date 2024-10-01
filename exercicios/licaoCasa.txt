@@ -22,13 +22,13 @@ media
 1) Cálculo do volume de um aquário: ok
 Crie um programa que calcule o volume de um aquário. O usuário deve inserir o comprimento, a largura e a altura do aquário. O programa deve calcular o volume e exibir o resultado em litros.
 
-2) Cálculo do consumo de combustível:
+2) Cálculo do consumo de combustível:ok
 Desenvolva um programa que calcule o consumo médio de combustível de um carro. O usuário deve inserir a distância percorrida e a quantidade de combustível consumido. O programa deve calcular e exibir o consumo médio (km/l).
 
-3) Cálculo da área de um terreno:
+3) Cálculo da área de um terreno:ok
 Desenvolva um programa que calcule a área de um terreno retangular. O usuário deve fornecer o comprimento e a largura do terreno, e o programa deve calcular a área em metros quadrados.
 
-4) Cálculo da Conversão de Real para Dólar:
+4) Cálculo da Conversão de Real para Dólar:ok
 Desenvolva um programa que calcule o valor em dólares (US$) a partir de uma quantia em reais (R$), utilizando uma taxa de câmbio informada pelo usuário.
 
 5) Cálculo do tempo de viagem:

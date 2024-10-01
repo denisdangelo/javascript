@@ -15,7 +15,7 @@ console.log("Conversor de Real para Dolar")
 
 //entrada de dados
 real = Number(input.question("Quantos reais voce quer converter: R$"))
-cota = Number(input.question("Qual a cotação de dolar atual: U$"))
+cota = Number(input.question("Qual a cotacao do dolar atual: U$"))
 
 //processamento
 dolar = real / cota

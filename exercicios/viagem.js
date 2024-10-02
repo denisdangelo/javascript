@@ -16,9 +16,10 @@ kmh = Number(input.question("Qual a velocidade media em km/h: km/h "))
 
 
 //processmento
-temp = dist/kmh
+temp = (dist/kmh)*60
+
 
 
 //saida
-console.log(`O tempo medio dessa viagem sera de ${temp}h`)
+console.log(`O tempo medio dessa viagem sera de ${temp}min`)
 

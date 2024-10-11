@@ -5,6 +5,7 @@
 
 //importar a biblioteca read-linesync
 const input = require('readline-sync')
+const color = require('colors')
 
 //variaveis
 let num1, num2, num3, media
@@ -22,4 +23,10 @@ num3 = Number(input.question("Digite o terceiro numero: "))
 media = (num1 + num2 + num3) / 3
 
 //saída
-console.log(`Média: ${media.toFixed(1)}`)
+console.log(`Média: ${media.toFixed(2)}`)
+
+if (media < 5) {
+    console.log("Reprovado".red.bold)
+} else {
+    console.log("Aprovado".blue.bold)
+}

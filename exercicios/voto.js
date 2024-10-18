@@ -10,6 +10,7 @@ const color = require('colors')
 
 //variaveis
 let idade
+console.clear()
 
 //entrada
 idade = Number(input.question("Insira sua idade: "))

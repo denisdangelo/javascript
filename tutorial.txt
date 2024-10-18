@@ -121,6 +121,31 @@ execução do programa
 node + nome do arquivo com a estenção (por exemplo node hello.js)
 
 
+estruturas condicionais
+
+if
+//condição
+else
+//negaão da condição
+
+if
+//condição1
+else if
+condição 2
+else (opcional)
+negação das condições
+
+switch case - uso de variavel numerica(numero inteiro)
+switch (variavel) {
+    case: 1
+    //codigo caso o valor da variavel seja 1
+    case: 2
+    //codigo caso o valor da variavel seja 2
+    break
+    default: 
+    //opcional, o código será executado se nenhum caso for definido 
+} 
+
 ------------------------------------------------------------------
 Node - Plataforma que permite a execução do JavaScript fora do navegador (browser)
 https://nodejs.org/pt (baixar sempre a versão lts)

@@ -145,6 +145,24 @@ switch (variavel) {
     default: 
     //opcional, o código será executado se nenhum caso for definido 
 } 
+Estruturas de controle - Laços de repetições. 
+
+for (let i = 1; i < 10; i++) {
+
+}
+//laço com numero de repetiçoes definidas
+//let i =1 (inicio)
+//i < 10 (condição)
+i++ (incremento) i--(decremento)
+
+uso do laço for
+1) Percorrer uma estrutura de dados (Importante)
+2) Simplificar o código
+3) Fazer calculos levando em conta a variavel interna do laço 
+
+OBS nós criamos uma variavel para o laço. Essa variavel deve ser um numero inteiro
+    estabelece uma condição (no exemplo o acontecmento será repetido entquanto i for < 10)
+    depois dessa validação a variavel é incrementada 
 
 ------------------------------------------------------------------
 Node - Plataforma que permite a execução do JavaScript fora do navegador (browser)

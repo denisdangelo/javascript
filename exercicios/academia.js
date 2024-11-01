@@ -62,3 +62,29 @@ if (imc < 18.5) {
 } else {
     console.log("IMC: Obesidade Grau III".bgred)
 }
+
+
+
+
+
+
+
+
+
+console.log(`${a} + ${b} = ${a+b}`)
+
+function subt(a - b ){
+    console.log(`${a} - ${b} = ${a-b}`)
+}
+
+function Mult(a * b ){
+    console.log(`${a} x ${b} = ${a*b}`)
+}
+
+function Divs(a / b ){
+    console.log(`${a} : ${b} = ${}`)
+}
+
+function porc(){
+    console.log(`${b} % de ${a} = ${}`)
+}

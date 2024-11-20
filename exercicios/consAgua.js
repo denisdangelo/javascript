@@ -5,6 +5,7 @@
 
 //biblioteca
 const input = require('readline-sync')
+console.log(typeof(input))
 
 //variaveis
 let peso, consumo
@@ -17,3 +18,4 @@ consumo = peso * 0.035
 
 //saida
 console.log(`O consumo ideal para você é ${consumo.toFixed(3)}Litro(s)`)
+

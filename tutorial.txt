@@ -239,3 +239,32 @@ cls - limpar a tela
 dir - listar arquivos e diretórios
 cd "nome do diretorio" - entrar no diretório
 cd .. - voltar para o diretório anterior 
+
+
+_________________________________________________________________________
+
+POO (Programação orientada a objetos)
+ 
+Objeto -> estrutura de dados
+
+Conceito relacionado a estrutura de dados:
+CRUD: Create Read Update Delete
+São as 4 operações básicas que podemos realizar com a estrutura de dados:
+Create: Inserção de dados na Estruturas
+Read: Pesquisa de dados na estrutura
+Update: Alteração de dados na estrutura
+Delete: Exclusão de dados 
+
+
+Pilares da programação orientada à objetos
+
+//Reutilização
+Abstração
+Herança 
+Polimorfismo
+
+//Segurança
+Encapsulamento
+
+OBS: Toda classe modelo obrigatóriamente deve iniciar com letra maiúscula
+

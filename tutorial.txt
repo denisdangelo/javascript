@@ -263,8 +263,30 @@ Abstração
 Herança 
 Polimorfismo
 
+Classe modelo (Abstração - Herança - Poliformismo):
+- você pode usar bibliotecas nativas do js
+- você pode usar uma biblioteca instalada do node
+é criada pelo usário usnado "class"
+
+observação: o ponto "." é usado para acessar atributos
+
 //Segurança
 Encapsulamento
 
+- A unica coisa que dá para encapsular é uma variavel
+- Depois de encapsular a variavel, é necessário criar dois metodos na classe para acessar a variavel: get e set.
+-get para "pegar" a variavel e set para inserir novo valor na variavel
+
 OBS: Toda classe modelo obrigatóriamente deve iniciar com letra maiúscula
+
+Dica: 
+
+Classe (Biologia Ex: Mamíferos)
+
+Lingua portuguesa: 
+Objeto é substantivo
+
+Atributo é um adjetivo
+
+Metodos são verbos
 

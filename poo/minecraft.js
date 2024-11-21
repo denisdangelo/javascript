@@ -32,14 +32,14 @@ class Bloco {
 // Herança - extends relaciona a classe criada com a classe herdada
 //nesse caso a classe Enxada herda os recursos da classe Bloco
 //obs: a classe bloco não pode utilizar os recursos da classe Enxada
-class Enxada extends Bloco{
+class Enxada extends Bloco {
     //atributo
-    constructor(textura, resistencia, conquista){
+    constructor(textura, resistencia, conquista) {
         super(textura, resistencia)//super reutiliza a herança
         this.conquista = conquista
     }
     //metodos
-    criarEnxada(){
+    criarEnxada() {
         console.log("----------------------------------------------")
         console.log("-__")
         console.log("  /")
@@ -47,16 +47,16 @@ class Enxada extends Bloco{
         console.log(`Enxada de ${this.textura} criada`)
         console.log(`Resistencia: ${this.resistencia}`)
     }
-    arar(){
+    arar() {
         console.log("._._._.")
-        if (this.conquista === true){
+        if (this.conquista === true) {
             console.log("☀ Conquista obtida!")
         }
     }
     //polimorfismo: mudança de comportamento de um método que já existe na classe modelo (pai)
     //no exemplo a classe Bloco
     //Atenção. Obrigatório usar o mesmo nome do metodo a ser alterado
-    minerar(){
+    minerar() {
         console.log("✞ Dano atribuído!")
     }
 }

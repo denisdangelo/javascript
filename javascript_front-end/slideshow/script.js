@@ -28,8 +28,8 @@ function show() {
         if(indice >= slides.length){
             indice = 0
         }
-        slide.src = `img/${slide[indice]}`
-    },1000)
+        slide.src = `img/${slides[indice]}`
+    
 
     //Efeito de saida
 
@@ -37,7 +37,7 @@ function show() {
         slide.classList.remove('slideIn')
     }
     slide.classList.add('slideOut')
-
+    },1000)
     // Intervalo para próxima execução (loop infinito)
     setTimeout(show, intervalo)
 }

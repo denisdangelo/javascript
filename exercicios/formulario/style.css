@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+/* RESET CSS*/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Variáveis */
+:root{
+    --cor1: #bccfed;
+    --cor2: #1c58c8;
+    --cor3: #3d67dc;
+    --cor4: #ff0000;
+    --cor5: #1a5c37;
+    --cor6: #FFF;
+    --cor7: #444444;
+
+    --fonte-titulo: 'sans-serif';
+}
+
+body{
+    background: var(--cor2);
+}
+
+#interface{
+    background-color: var(--cor1);
+    max-width: 1200px;
+    margin: 0 auto;
+    /* margin: 0 <- superior e inferior | auto <- esquerda e direita*/
+    /* pode ser colocado como 10px, 20px, 10px, 20px (superior, lateral direita, inferior, lateral esquerda)*/
+}
+
+h1{
+    font-family: var(--fonte-titulo);
+    font-size: 2em;
+    margin: 30px 0px;
+    padding: 10px 0px;
+    text-align: center;
+    color: var(--cor4);
+}
+
+
+form{
+    width: 1000px;
+    font-size: 1.2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0px 50px auto;
+}
+
+input, select{
+    border-radius: 5px;
+    padding: 5px;
+    background-color: var(--cor6);
+    font-size: 0.5em;
+}
+
+fieldset{
+    border: 5px solid var(--cor7);
+    padding: 15px;
+    margin-bottom: 30px;
+}
+

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulário de contato">
+    <title>Formulário</title>
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="interface">
+
+        <img src="img/logo.png" alt="Logo" class="logo">
+        <h1>Lista Vip</h1>
+        <header class="topo">
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Cadastro</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <form action="mailto:elen@email.com" method="post" enctype="text/plain">
+            <fieldset class="usuario">
+                <legend>Identificação do usuário</legend>
+                <p>
+                    <label for="cnome">Nome:</label>
+                    <input type="text" name="nome" id="cnome" size="30" maxlength="50" placeholder="Nome Completo"
+                        required autofocus>
+                </p>
+
+                <p>
+                    <label for="cnasc">Data de nascimento</label>
+                    <input type="date" name="nasc" id="cnasc">
+                </p>
+
+                <p>
+                    <label for="cemail">E-mail</label>
+                    <input type="email" name="email" id="cemail" size="30" maxlength="50" placeholder="Digite seu email"
+                        required>
+                </p>
+
+                <p>
+                    <label for="ccpf">CPF:</label>
+                    <input type="text" name="cpf" id="ccpf" size="30" maxlength="14" placeholder="XXX.XXX.XXX-XX"
+                    onblur="validarCPF(this)">
+                </p>
+
+                <h2>Busca de Endereço por CEP</h2>
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep" maxlength="9" onblur="buscarEndereco()" required>
+                <br>
+
+                <label for="logradouro">Logradouro:</label>
+                <input type="text" id="logradouro" readonly>
+                <br>
+
+                <label for="bairro">Bairro:</label>
+                <input type="text" id="bairro" readonly>
+                <br>
+
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" readonly>
+                <br>
+
+                <label for="uf">UF:</label>
+                <select id="uf" name="uf">
+                    <option value="">Selecione</option>
+                    <option value="AC">AC</option>
+                    <option value="AL">AL</option>
+                    <option value="AP">AP</option>
+                    <option value="AM">AM</option>
+                    <option value="BA">BA</option>
+                    <option value="CE">CE</option>
+                    <option value="DF">DF</option>
+                    <option value="ES">ES</option>
+                    <option value="GO">GO</option>
+                    <option value="MA">MA</option>
+                    <option value="MT">MT</option>
+                    <option value="MS">MS</option>
+                    <option value="MG">MG</option>
+                    <option value="PA">PA</option>
+                    <option value="PB">PB</option>
+                    <option value="PR">PR</option>
+                    <option value="PE">PE</option>
+                    <option value="PI">PI</option>
+                    <option value="RJ">RJ</option>
+                    <option value="RN">RN</option>
+                    <option value="RS">RS</option>
+                    <option value="RO">RO</option>
+                    <option value="RR">RR</option>
+                    <option value="SC">SC</option>
+                    <option value="SP">SP</option>
+                    <option value="SE">SE</option>
+                    <option value="TO">TO</option>
+                </select>
+                <br>
+
+                <p>
+                    <label for="cmsg">Mensagem:</label>
+                </p>
+
+                <p>
+                    <textarea name="msg" id="cmsg" cols="70" rows="7" placeholder="Digite sua mensagem aqui..."
+                        required></textarea>
+                </p>
+
+                <button type="submit" name="enviar" class="btn">Enviar</button>
+                <button type="reset" name="limpar" class="btn">Limpar</button>
+
+            </fieldset>
+        </form>
+
+        <footer id="rodape">
+            <p>Somente para fins educativos.</p>
+            <p>
+                <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png" alt="Instagram"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.png" alt="Facebook"></a>
+                <a href="https://x.com/?lang=pt-br" target="_blank"><img src="img/x_twitter.png" alt="X-Twitter"></a>
+                <a href="https://github.com/" target="_blank"><img src="img/github.png" alt="Github"></a>
+                <a href="https://br.linkedin.com/" target="_blank"><img src="img/linkedin.png" alt="Linkedin"></a>
+            </p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

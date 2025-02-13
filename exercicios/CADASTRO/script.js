@@ -28,16 +28,29 @@ function buscarEndereco() {
     }
 }
 
-function validarCPF() {
+async function validarCPF() {
     var campo = document.getElementById('ccpf');
     var strCPF = campo.value.replace(/\D/g, ''); // Remove caracteres não numéricos
 
-    if (!TestaCPF(strCPF)) {
-        alert("CPF inválido!");
-        campo.value = ""; // Limpa o campo
-        campo.focus(); // Retorna o foco ao campo
-    }
+		const resultado = await new Promise((resolve) => {
+			setTimeout(() => {
+				if (!TestaCPF(strCPF)) {
+					console.log("CPF inválido!");
+					campo.value = "";	
+					resolve(false);
+				} else {
+					console.log("CPF válido!");
+					resolve(true);
+				}
+			}, 100)	
+    });
+	if (resultado) {
+		console.log("CPF Válido!");
+	} else {
+		alert("CPF inválido! Por favor corrija.")
+	}
 }
+
 
 function TestaCPF(strCPF) {
     var Soma = 0;

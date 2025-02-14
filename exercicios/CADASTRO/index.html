@@ -14,15 +14,7 @@
 
 <body>
     <div id="interface" class="container">
-        <img src="img/logo.png" alt="Logo" class="logo">
-        <h1 class="text-center">Lista Vip</h1>
-        <header class="topo">
-            <nav class="menu">
-                <ul class="list-inline text-center">
-                    <li class="list-inline-item"><a href="index.html">Cadastro</a></li>
-                </ul>
-            </nav>
-        </header>
+        
 
         <form action="mailto:elen@email.com" method="post" enctype="text/plain">
             <fieldset class="mb-4">
@@ -34,50 +26,59 @@
                     <input type="text" name="nome" id="cnome" class="form-control" placeholder="Nome Completo" required autofocus>
                 </div>
 
-                <!-- Data de Nascimento e E-mail -->
+                <!-- Data de Nascimento e E-mail CPF-->
                 <div class="row mb-3">
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <label for="cnasc" class="form-label">Data de nascimento:</label>
                         <input type="date" name="nasc" id="cnasc" class="form-control">
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <label for="cemail" class="form-label">E-mail:</label>
                         <input type="email" name="email" id="cemail" class="form-control" placeholder="Digite seu email" required>
                     </div>
+                    <div class="col-md-4">
+                        <label for="ccpf" class="form-label">CPF:</label>
+                        <input type="text" name="cpf" id="ccpf" class="form-control" placeholder="XXX.XXX.XXX-XX" onblur="validarCPF()" required>
+                        <span id="cpfErro" class="text-danger" style="display: none;">CPF inválido! Por favor, corrija.</span>
+                    </div>
                 </div>
 
-                <!-- CPF -->
-                <div class="form-group mb-3">
-                    <label for="ccpf" class="form-label">CPF:</label>
-                    <input type="text" name="cpf" id="ccpf" class="form-control" placeholder="XXX.XXX.XXX-XX" onblur="validarCPF()" required>
-                    <span id="cpfErro" class="text-danger" style="display: none;">CPF inválido! Por favor, corrija.</span>
-                </div>
 
                 <!-- Busca de Endereço por CEP -->
-                <h2>Busca de Endereço por CEP</h2>
-                <div class="form-group mb-3">
-                    <label for="cep" class="form-label">CEP:</label>
-                    <input type="text" id="cep" class="form-control" maxlength="9" onblur="buscarEndereco()" required>
+                <div class="row mb-3">
+                    <div class="col-md-4">
+                       <label for="cep" class="form-label">CEP:</label>
+                     <input type="text" id="cep" class="form-control" maxlength="9" onblur="buscarEndereco()" required>
+                    </div>
+                    <div class="col-md-8">
+                        <label for="logradouro" class="form-label">Logradouro:</label>
+                        <input type="text" id="logradouro" class="form-control" readonly>
+                    </div>
                 </div>
 
                 <!-- Logradouro, Bairro, Cidade e UF -->
                 <div class="row mb-3">
-                    <div class="col-md-6">
-                        <label for="logradouro" class="form-label">Logradouro:</label>
-                        <input type="text" id="logradouro" class="form-control" readonly>
+                    <div class="col-md-2">
+                        <label for="numero" class="form-label">Número:</label>
+                        <input type="text" id="numero" class="form-control" readonly>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-2">
+                        <label for="complemento" class="form-label">Complemento:</label>
+                        <input type="text" id="complemento" class="form-control" readonly>
+                    </div>
+                    <div class="col-md-8">
                         <label for="bairro" class="form-label">Bairro:</label>
                         <input type="text" id="bairro" class="form-control" readonly>
                     </div>
+                    
                 </div>
 
                 <div class="row mb-3">
-                    <div class="col-md-6">
+                    <div class="col-md-8">
                         <label for="cidade" class="form-label">Cidade:</label>
                         <input type="text" id="cidade" class="form-control" readonly>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <label for="uf" class="form-label">UF:</label>
                         <select id="uf" name="uf" class="form-select">
                             <option value="">Selecione</option>
@@ -112,12 +113,6 @@
                     </div>
                 </div>
 
-                <!-- Mensagem -->
-                <div class="form-group mb-3">
-                    <label for="cmsg" class="form-label">Mensagem:</label>
-                    <textarea name="msg" id="cmsg" class="form-control" rows="7" placeholder="Digite sua mensagem aqui..." required></textarea>
-                </div>
-
                 <!-- Botões -->
                 <div class="text-center">
                     <button type="submit" name="enviar" class="btn btn-primary">Enviar</button>
@@ -126,16 +121,7 @@
             </fieldset>
         </form>
 
-        <footer id="rodape" class="text-center py-3">
-            <p>Somente para fins educativos.</p>
-            <p>
-                <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png" alt="Instagram" class="me-2"></a>
-                <a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.png" alt="Facebook" class="me-2"></a>
-                <a href="https://x.com/?lang=pt-br" target="_blank"><img src="img/x_twitter.png" alt="X-Twitter" class="me-2"></a>
-                <a href="https://github.com/" target="_blank"><img src="img/github.png" alt="Github" class="me-2"></a>
-                <a href="https://br.linkedin.com/" target="_blank"><img src="img/linkedin.png" alt="Linkedin" class="me-2"></a>
-            </p>
-        </footer>
+        
     </div>
 
     <!-- Bootstrap JS (opcional) -->

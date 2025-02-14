@@ -28,27 +28,48 @@ function buscarEndereco() {
     }
 }
 
-async function validarCPF() {
+function validarCPF() {
     var campo = document.getElementById('ccpf');
+    var mensagemErro = document.getElementById('cpfErro');
     var strCPF = campo.value.replace(/\D/g, ''); // Remove caracteres não numéricos
 
-		const resultado = await new Promise((resolve) => {
-			setTimeout(() => {
-				if (!TestaCPF(strCPF)) {
-					console.log("CPF inválido!");
-					campo.value = "";	
-					resolve(false);
-				} else {
-					console.log("CPF válido!");
-					resolve(true);
-				}
-			}, 100)	
-    });
-	if (resultado) {
-		console.log("CPF Válido!");
-	} else {
-		alert("CPF inválido! Por favor corrija.")
-	}
+    if (!TestaCPF(strCPF)) {
+        console.log("CPF inválido!");
+        mensagemErro.style.display = 'inline'; // Exibe a mensagem de erro
+        campo.value = ""; // Limpa o campo
+        
+        return false; // Retorna false para indicar que o CPF é inválido
+    } else {
+        console.log("CPF válido!");
+        mensagemErro.style.display = 'none'; // Oculta a mensagem de erro
+        return true; // Retorna true para indicar que o CPF é válido
+    }
+}
+
+function TestaCPF(strCPF) {
+    var Soma = 0;
+    var Resto;
+
+    if (strCPF.length !== 11 || /^(\d)\1{10}$/.test(strCPF)) return false; // Verifica se são 11 dígitos e se não são repetidos
+
+    for (var i = 1; i <= 9; i++) {
+        Soma += parseInt(strCPF.charAt(i - 1)) * (11 - i);
+    }
+    Resto = (Soma * 10) % 11;
+
+    if (Resto === 10 || Resto === 11) Resto = 0;
+    if (Resto !== parseInt(strCPF.charAt(9))) return false;
+
+    Soma = 0;
+    for (var i = 1; i <= 10; i++) {
+        Soma += parseInt(strCPF.charAt(i - 1)) * (12 - i);
+    }
+    Resto = (Soma * 10) % 11;
+
+    if (Resto === 10 || Resto === 11) Resto = 0;
+    if (Resto !== parseInt(strCPF.charAt(10))) return false;
+
+    return true;
 }
 
 
